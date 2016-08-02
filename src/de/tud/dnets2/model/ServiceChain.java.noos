@@ -1,0 +1,24 @@
+package de.tud.dnets2.model;
+
+import java.util.List;
+
+/**
+ * Service Chain incorporating Service Functions. A Service Chain serves
+ * as a template for a concrete Service Chain Instance.
+ * @author Victor-Philipp Negoescu
+ * @version 1.0
+ */
+public class ServiceChain extends Entity {
+	private static final long serialVersionUID = 705007053063334011L;
+	
+	/** Desired Service Functions in this Service Chain */
+	private List<ServiceFunction> serviceFunctions;
+	
+	public List<ServiceFunction> getServiceFunctions() {
+		return serviceFunctions;
+	}
+
+	public void setServiceFunctions(List<ServiceFunction> serviceFunctions) {
+		this.serviceFunctions = serviceFunctions;
+	}
+}

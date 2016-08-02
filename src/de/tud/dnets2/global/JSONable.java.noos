@@ -1,0 +1,12 @@
+package de.tud.dnets2.global;
+
+import org.json.JSONObject;
+
+/**
+ * A JSON-able object can be converted to a JSON object
+ * @author Victor-Philipp Negoescu
+ * @version 1.0
+ */
+public interface JSONable {
+	public JSONObject toJSON();
+}
